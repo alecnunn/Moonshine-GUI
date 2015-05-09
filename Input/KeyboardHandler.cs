@@ -16,18 +16,25 @@ namespace Moonshine.gui.Input
         {
             state = Keyboard.GetState();
         }
-        public static string KeyPressedStr(Keys k) {
-            if(state.IsKeyUp(k)) {
+        public static string KeyPressedStr(Keys k)
+        {
+            if(state.IsKeyUp(k))
+            {
                 dictionary[k] = false;
             }
-            if(state.IsKeyDown(k)) {
-                if(dictionary[k] == false) {
+            if(state.IsKeyDown(k))
+            {
+                if(dictionary[k] == false)
+                {
                     dictionary[k] = true;
-                    if(state.IsKeyDown(Keys.LeftShift)) {
-
+                    if(state.IsKeyDown(Keys.LeftShift))
+                    {
                         return k.ToString().ToUpper();
-                    } else {
-                        switch(k) {
+                    }
+                    else
+                    {
+                        switch(k)
+                        {
                             case(Keys.D1):
                                 return "1";
                                 break;

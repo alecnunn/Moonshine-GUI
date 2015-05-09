@@ -20,10 +20,8 @@ namespace Moonshine.gui
     {
         private Texture2D texture;
         private Texture2D texture_hot;
-
         private Color tinting;
         private Color hot_tinting;
-
         private bool hot;
         private bool use_hot_texture;
 
@@ -127,10 +125,6 @@ namespace Moonshine.gui
             MouseHandler.Hotspot = new Point (x, y);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="t"></param>
         public override void Update (GameTime t)
         {
             Position = new Vector2(MouseHandler.Position.X, MouseHandler.Position.Y);
@@ -143,11 +137,6 @@ namespace Moonshine.gui
             base.Update (t);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="t"></param>
-        /// <param name="b"></param>
         public override void Render (GameTime t, SpriteBatch b)
         {
             Texture2D tex = use_hot_texture? hot? texture_hot == null? null : texture_hot : texture == null? null : texture : texture == null? null : texture;

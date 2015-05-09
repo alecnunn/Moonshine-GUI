@@ -13,9 +13,6 @@ using System.IO;
 
 namespace Moonshine.gui
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public class Panel : Control, ITransparentControl
     {
         public Color BackColor;
@@ -61,10 +58,6 @@ namespace Moonshine.gui
         public override int Width { get { return width; } set { width = value; _stretch = false; } }
         public override int Height { get { return height; } set { height = value; _stretch = false; } }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="t"></param>
         public override void Update (GameTime t)
         {
             if (_stretch)

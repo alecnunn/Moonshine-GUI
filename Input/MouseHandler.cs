@@ -18,7 +18,17 @@ namespace Moonshine.gui.Input
         public static Point Size;
 
         private static Point speed;
-        public static Point Speed { get { return speed; } set { speed = value; realSpeed = value; } }
+        public static Point Speed
+        {
+            get 
+            { 
+                return speed; 
+            }
+            set
+            {
+                speed = value; realSpeed = value;
+            }
+        }
 
         private static Point center;
         private static Point delta;
@@ -126,6 +136,5 @@ namespace Moonshine.gui.Input
                 }
             }
         }
-
     }
 }

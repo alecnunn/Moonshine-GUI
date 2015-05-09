@@ -74,10 +74,6 @@ namespace Moonshine.gui
         private bool _textlocked;
         private bool _hot = false;
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="t"></param>
         public override void Update (GameTime t)
         {
             if (MouseIntersects)
@@ -120,15 +116,13 @@ namespace Moonshine.gui
                 return new Vector2 (w, h);
             }
         }
-        public void SetSize(int width, int height) {
+        
+        public void SetSize(int width, int height)
+        {
             this.Width = width;
             this.Height = height;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="t"></param>
-        /// <param name="b"></param>
+
         public override void Render (GameTime t, SpriteBatch b)
         {
             if (!_hot && background != null)

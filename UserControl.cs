@@ -16,14 +16,8 @@ namespace Moonshine.gui
     /// </summary>
     public class UserControl : IControl
     {
-        /// <summary>
-        /// 
-        /// </summary>
         public GraphicsDevice GraphicsDevice { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
         public DrawPriority Priority { get; set; }
 
         /// <summary>

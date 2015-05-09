@@ -19,12 +19,7 @@ namespace Moonshine.gui.Misc
 
         private float min;
         private float max;
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
+        
         public Animator (int a, int b)
         {
             min = Math.Min (a, b);

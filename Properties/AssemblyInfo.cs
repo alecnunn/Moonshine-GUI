@@ -8,8 +8,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle ("Moonshine.gui")]
 [assembly: AssemblyProduct ("Moonshine.gui")]
 [assembly: AssemblyDescription ("")]
-[assembly: AssemblyCompany ("Microsoft")]
-[assembly: AssemblyCopyright ("Copyright © Microsoft 2014")]
+[assembly: AssemblyCompany ("SplittyDev")]
+[assembly: AssemblyCopyright ("Copyright © SplittyDev 2014")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 
