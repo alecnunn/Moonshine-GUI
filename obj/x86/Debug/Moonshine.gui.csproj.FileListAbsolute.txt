@@ -1,0 +1,7 @@
+C:\Users\overpowered studios\Documents\MOONSHINE.GUI\bin\x86\Debug\Moonshine.gui.xml
+C:\Users\overpowered studios\Documents\MOONSHINE.GUI\bin\x86\Debug\Moonshine.gui.dll
+C:\Users\overpowered studios\Documents\MOONSHINE.GUI\bin\x86\Debug\Moonshine.gui.pdb
+C:\Users\overpowered studios\Documents\MOONSHINE.GUI\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\overpowered studios\Documents\MOONSHINE.GUI\obj\x86\Debug\Moonshine.gui.dll
+C:\Users\overpowered studios\Documents\MOONSHINE.GUI\obj\x86\Debug\Moonshine.gui.pdb
+C:\Users\overpowered studios\Documents\MOONSHINE.GUI\obj\x86\Debug\Moonshine.gui.csprojResolveAssemblyReference.cache

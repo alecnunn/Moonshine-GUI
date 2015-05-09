@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Moonshine.gui</name>
+    </assembly>
+    <members>
+        <member name="T:Moonshine.gui.Control">
+            <summary>
+            All controls should be derived from this class
+            </summary>
+        </member>
+        <member name="T:Moonshine.gui.IControl">
+            <summary>
+            You should use the <see cref="T:Moonshine.gui.Control"/> class!
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.IControl.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Updates the relevant variables
+            </summary>
+            <param name="t">The GameTime, which will be used for animation purposes</param>
+        </member>
+        <member name="M:Moonshine.gui.IControl.Render(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            Draws the <see cref="T:Moonshine.gui.Control"/> on the screen
+            </summary>
+            <param name="t">The GameTime, which will be used for animation purposes</param>
+            <param name="b">The SpriteBatch, which will be used to draw the <see cref="T:Moonshine.gui.Control"/></param>
+        </member>
+        <member name="P:Moonshine.gui.IControl.GraphicsDevice">
+            <summary>
+            Gets or sets the GraphicsDevice of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Priority">
+            <summary>
+            Gets or sets the draw priority of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Visible">
+            <summary>
+            Get or set the visibility of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Enabled">
+            <summary>
+            Enable or disable the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Focused">
+            <summary>
+            Returns if the <see cref="T:Moonshine.gui.Control"/> is currently focused
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Text">
+            <summary>
+            Gets or sets the Text of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Width">
+            <summary>
+            Gets or sets the width of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Height">
+            <summary>
+            Gets or sets the height of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Position">
+            <summary>
+            Gets or sets the position of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IControl.Bounds">
+            <summary>
+            Gets the bounds of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Control.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Updates the relevant variables
+            </summary>
+            <param name="t">The GameTime, which will be used for animation purposes</param>
+        </member>
+        <member name="M:Moonshine.gui.Control.Render(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            Draws the <see cref="T:Moonshine.gui.Control"/> on the screen
+            </summary>
+            <param name="t">The GameTime, which will be used for animation purposes</param>
+            <param name="b">The SpriteBatch, which will be used to draw the <see cref="T:Moonshine.gui.Control"/></param>
+        </member>
+        <member name="P:Moonshine.gui.Control.GraphicsDevice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Priority">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Visible">
+            <summary>
+            Get or set the Visibility of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Enabled">
+            <summary>
+            Enable or disable the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Focused">
+            <summary>
+            Returns if the <see cref="T:Moonshine.gui.Control"/> is currently focused
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Position">
+            <summary>
+            Gets or sets the position of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Width">
+            <summary>
+            Gets or sets the width of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Height">
+            <summary>
+            Gets or sets the height of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Bounds">
+            <summary>
+            Gets the bounds of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Control.Text">
+            <summary>
+            Gets or sets the text of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="T:Moonshine.gui.ITransparentControl">
+            <summary>
+            You should implement this interface if you want to create a container control
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.ITransparentControl.Transparency">
+            <summary>
+            Transparency
+            </summary>
+        </member>
+        <member name="T:Moonshine.gui.IAnimatableControl">
+            <summary>
+            You should implement this interface if you want to create a control with animations
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.IAnimatableControl.animators">
+            <summary>
+            A Sorted List of all <see cref="T:Moonshine.gui.Misc.Animator"/>s
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.Textbox.Transparency">
+            <summary>
+            Gets or sets the transparency of this <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="T:Moonshine.gui.UserControl">
+            <summary>
+            All user controls should be derived from this class
+            </summary>
+        </member>
+        <member name="F:Moonshine.gui.UserControl.ControlCollection">
+            <summary>
+            A List of all <see cref="T:Moonshine.gui.Control"/>s
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.UserControl.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Updates the relevant variables
+            </summary>
+            <param name="t">The GameTime, which will be used for animation purposes</param>
+        </member>
+        <member name="M:Moonshine.gui.UserControl.Render(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            Draws the <see cref="T:Moonshine.gui.Control"/> on the screen
+            </summary>
+            <param name="t">The GameTime, which will be used for animation purposes</param>
+            <param name="b">The SpriteBatch, which will be used to draw the <see cref="T:Moonshine.gui.Control"/></param>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.GraphicsDevice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Priority">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Visible">
+            <summary>
+            Get or set the Visibility of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Enabled">
+            <summary>
+            Enable or disable the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Focused">
+            <summary>
+            Returns if the <see cref="T:Moonshine.gui.Control"/> is currently focused
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Position">
+            <summary>
+            Gets or sets the position of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Width">
+            <summary>
+            Gets or sets the width of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Height">
+            <summary>
+            Gets or sets the height of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Bounds">
+            <summary>
+            Gets the bounds of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="P:Moonshine.gui.UserControl.Text">
+            <summary>
+            Gets or sets the text of the <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="T:Moonshine.gui.GUI">
+            <summary>
+            The GUI Manager
+            You should only keep a single instance of this class.
+            Use the reset method to delete all <see cref="T:Moonshine.gui.Control"/>s
+            </summary>
+        </member>
+        <member name="F:Moonshine.gui.GUI.ControlCollection">
+            <summary>
+            A List of all <see cref="T:Moonshine.gui.Control"/>s
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.GUI.#cctor">
+            <summary>
+            Creates a new instance of the GUI
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.GUI.Remove(Moonshine.gui.Control)">
+            <summary>
+            Removes a <see cref="T:Moonshine.gui.Control"/> from the <see cref="F:Moonshine.gui.GUI.ControlCollection"/>
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:Moonshine.gui.GUI.Update">
+            <summary>
+            This version of the Update function will prevent animations from working!
+            You should use Update (GameTime t)
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.GUI.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Updates all <see cref="T:Moonshine.gui.Control"/>s.
+            This function must be called in the Update function of your game.
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Moonshine.gui.GUI.Render(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            This version of the Render function will prevent animations from working!
+            You should use Render (GameTime t, SpriteBatch b)
+            </summary>
+            <param name="b"></param>
+        </member>
+        <member name="M:Moonshine.gui.GUI.Render(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            Draws all <see cref="T:Moonshine.gui.Control"/>s on the screen
+            This function must be called in the Render function of your game.
+            </summary>
+            <param name="t"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:Moonshine.gui.GUI.Reset">
+            <summary>
+            Removes all <see cref="T:Moonshine.gui.Control"/>s
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Input.MouseHandler.Initialize(Microsoft.Xna.Framework.Graphics.GraphicsDevice)">
+            <summary>
+            Initializes the static <see cref="T:Moonshine.gui.Input.MouseHandler"/> class
+            </summary>
+            <param name="dev"></param>
+        </member>
+        <member name="M:Moonshine.gui.Input.MouseHandler.Update">
+            <summary>
+            Updates the position of the mouse
+            </summary>
+        </member>
+        <member name="T:Moonshine.gui.Cursor">
+            <summary>
+            A control which acts as a cursor
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Cursor.#ctor">
+            <summary>
+            Creates a new instance of this <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Cursor.SetTexture(Microsoft.Xna.Framework.Graphics.Texture2D,System.Boolean,System.Boolean)">
+            <summary>
+            Specifies the texture to use as cursor
+            </summary>
+            <param name="tex"></param>
+            <param name="hot"></param>
+            <param name="center_hotspot">Should the hotspot be set to the center of the texture? (Default: false)</param>
+        </member>
+        <member name="M:Moonshine.gui.Cursor.UnsetTexture(System.Boolean)">
+            <summary>
+            Unsets the cursor texture
+            </summary>
+            <param name="hot"></param>
+        </member>
+        <member name="M:Moonshine.gui.Cursor.SetTinting(Microsoft.Xna.Framework.Color,System.Boolean)">
+            <summary>
+            Changes the appearance of the cursor using tinting
+            </summary>
+            <param name="tint"></param>
+            <param name="hot"></param>
+        </member>
+        <member name="M:Moonshine.gui.Cursor.UnsetTinting(System.Boolean)">
+            <summary>
+            Unsets the tinting
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Cursor.SetHotspot(System.Int32,System.Int32)">
+            <summary>
+            Sets the hotspot to match the cursor texture
+            </summary>
+            <param name="x">The x corrdinate relative to the left</param>
+            <param name="y">The y coordinate relative to the top</param>
+        </member>
+        <member name="M:Moonshine.gui.Cursor.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Moonshine.gui.Cursor.Render(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:Moonshine.gui.Misc.Animator.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="T:Moonshine.gui.Misc.KeyHelper">
+            <summary>
+            Pure awesomeness.
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Misc.KeyHelper.#cctor">
+            <summary>
+            Instantiates the needed variables
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Misc.KeyHelper.WatchKey(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Watches a specific key
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Moonshine.gui.Misc.KeyHelper.Update">
+            <summary>
+            Updates the key states
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Misc.KeyHelper.KeyPressed(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Checks if the specific key is pressed
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.gui.Button">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Button.#ctor">
+            <summary>
+            Creates a new instance of this <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Button.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Moonshine.gui.Button.Render(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <param name="b"></param>
+        </member>
+        <member name="P:Moonshine.gui.Button.Transparency">
+            <summary>
+            Gets or sets the transparency of this <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="T:Moonshine.gui.Panel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Panel.#ctor(System.Boolean)">
+            <summary>
+            Creates a new instance of this <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Panel.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Moonshine.gui.Panel.Stretch">
+            <summary>
+            Stretches the panel to fit the window
+            </summary>
+        </member>
+        <member name="M:Moonshine.gui.Panel.Render(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <param name="b"></param>
+        </member>
+        <member name="P:Moonshine.gui.Panel.Transparency">
+            <summary>
+            Gets or sets the transparency of this <see cref="T:Moonshine.gui.Control"/>
+            </summary>
+        </member>
+    </members>
+</doc>

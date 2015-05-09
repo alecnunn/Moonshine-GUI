@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonshine.gui", "Moonshine.gui.csproj", "{B25D17AC-C184-4A89-9834-6B74B6A4A065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsGame1", "..\WindowsGame1\WindowsGame1\WindowsGame1.csproj", "{F1A2E4E8-D499-474D-B0EC-29F3F08E976C}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "WindowsGame1Content", "..\WindowsGame1\WindowsGame1Content\WindowsGame1Content.contentproj", "{6DDC17B1-9898-42C7-B38F-39FB65F846F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B25D17AC-C184-4A89-9834-6B74B6A4A065}.Debug|x86.ActiveCfg = Debug|x86
+		{B25D17AC-C184-4A89-9834-6B74B6A4A065}.Debug|x86.Build.0 = Debug|x86
+		{B25D17AC-C184-4A89-9834-6B74B6A4A065}.Release|x86.ActiveCfg = Release|x86
+		{B25D17AC-C184-4A89-9834-6B74B6A4A065}.Release|x86.Build.0 = Release|x86
+		{F1A2E4E8-D499-474D-B0EC-29F3F08E976C}.Debug|x86.ActiveCfg = Debug|x86
+		{F1A2E4E8-D499-474D-B0EC-29F3F08E976C}.Debug|x86.Build.0 = Debug|x86
+		{F1A2E4E8-D499-474D-B0EC-29F3F08E976C}.Release|x86.ActiveCfg = Release|x86
+		{F1A2E4E8-D499-474D-B0EC-29F3F08E976C}.Release|x86.Build.0 = Release|x86
+		{6DDC17B1-9898-42C7-B38F-39FB65F846F0}.Debug|x86.ActiveCfg = Debug|x86
+		{6DDC17B1-9898-42C7-B38F-39FB65F846F0}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
